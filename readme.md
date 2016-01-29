@@ -29,10 +29,10 @@ dataframe['m245_indicators'] = '10'
 
 Our dataframe now looks like this:
 
-| m007 | m245                               |
-| ---- | ---------------------------------- |
-| ta   | $aWoman in the nineteenth century. |
-| ta   | $aThe fire next time.              |
+| m007 | m245                               | m245_indicators |
+| ---- | ---------------------------------- | --------------- |
+| ta   | $aWoman in the nineteenth century. | 10              |
+| ta   | $aThe fire next time.              | 10              |
 
 To convert the dataframe into a series of MARC records, we load it into an instance of pandas-marc's `MARCDataFrame` class. This allows us to generate pymarc `Record` objects from the dataframe rows:
 
