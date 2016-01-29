@@ -63,10 +63,6 @@ with open('marc_data.mrc', 'wb') as marc_file:
         writer.write(record)
 ```
 
-### Indicators
-
-
-
 ### Delimiters
 
 pandas-marc uses the following delimiters by default:
@@ -105,3 +101,5 @@ pytest tests/test_pandas_marc.py
 # Or just...
 pytest
 ```
+
+[pytest]: https://docs.pytest.org/en/latest/
